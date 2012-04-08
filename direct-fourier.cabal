@@ -1,0 +1,24 @@
+name: direct-fourier
+version: 1.0
+cabal-version: >= 1.12
+build-type: Simple
+license: BSD3
+license-file: LICENSE
+copyright: Copyright (c) 2012 Irene Knapp
+author: Irene Knapp <ireney.knapp@gmail.com>
+maintainer: ireney.knapp@gmail.com
+homepage: http://ireneknapp.com/software/
+bug-reports: http://ireneknapp.com/issues/create/
+category: Numeric
+synopsis: Fast Fourier Transform (fft) in native Haskell.
+description:
+
+Source-Repository head
+  type: darcs
+  location: http://ireneknapp.com/software/darcs/direct-fourier/
+
+Library
+  exposed-modules: Numeric.Fourier
+  build-depends: base >= 4.1 && < 5,
+                 array >= 0.3.0.0 && < 1
+  default-language: Haskell2010
